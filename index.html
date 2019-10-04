@@ -9,7 +9,21 @@
   <p id="description">survey form by Certil and Misa</p>
   <div>
     <form id="survey-form">
-    <input type="text" id="name" placeholder="enter your name"/>
+    <label id="name-label" for="name">* Name: </label>
+    <input type="text" id="name" placeholder="enter your name" required/><br>
+    <label id="email-label" for="email">* Email: </label>
+    <input type="email" id="email" placeholder="enter your e-mail" required/><br>
+    <label id="number-label" for="email">* Phone: </label>
+    <input type="number" name="phone" id="number" min="1" max="125" class="input-field" placeholder="phone"><br>
+    <label for="currentPos">What do you think about microverse?</label>
+    <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled="" value="">Select an option</option>
+      <option value="student">great</option>
+      <option value="job">not too great</option>
+      <option value="learner">It's sometghing</option>
+      <option value="preferNo">Prefer not to say</option>
+    </select>
+
     </form>
   </div>
   <body>
